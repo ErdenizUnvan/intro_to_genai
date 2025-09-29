@@ -1,0 +1,718 @@
+intents:
+  - tag: google
+    patterns:
+      - google
+      - arama
+      - internet
+      - internette arama yapalım
+      - google'da arama yapalım
+    responses:
+      - Google
+    context:
+      - ''
+  - tag: greeting
+    patterns:
+      - selam
+      - orda mısın
+      - hey
+      - hola
+      - hello
+      - iyi günler
+      - namaste
+      - yo
+      - aleykum selam
+      - selamun aleykum
+      - merhabalar
+      - merhaba
+      - selamlar
+    responses:
+      - Merhaba
+      - Sizi görmek ne güzel
+      - Sizi yeniden gördüğüm için mutluyum
+      - Merhaba, size, nasıl yardımcı olabilirim
+    context:
+      - ''
+  - tag: goodbye
+    patterns:
+      - bye
+      - görüşmek üzere
+      - goodbye
+      - görüşürüz
+      - kendine iyi bak
+      - güle güle
+      - çıkış
+      - programı kapat
+      - kapat
+    responses:
+      - Görüşürüz. İyi günler dilerim.
+      - Sağlıklı günler dilerim. Tekrar görüşmek üzere
+      - Güle güle. Yine beklerim.
+    context:
+      - ''
+  - tag: thanks
+    patterns:
+      - rica ederim
+      - saol
+      - saolasın
+      - teşekkürler
+      - teşekkür ederim
+      - çok yardımcı oldun
+      - süper, teşekkürler
+      - yardım ettiğin için teşekkürler
+      - yardımcı olduğun için teşekkür ederim
+    responses:
+      - Size yardımcı olduğum için mutluyum
+      - Size yardımcı olmak benim görevim
+    context:
+      - ''
+  - tag: noanswer
+    patterns: []
+    responses:
+      - Pardon, sizi anlayamadım
+      - Lütfen daha fazla bilgi verin
+      - Tam olarak anladığıma emin değilim
+    context:
+      - ''
+  - tag: options
+    patterns:
+      - amacın nedir
+      - hedefin nedir
+      - senin amacın nedir
+      - senin hedefin nedir
+      - senin olayın nedir
+      - bana nasıl yardımcı olabilirsin
+      - ne yapabilirsin
+      - nasıl yardımcı olabilirsin
+      - nasıl yardım edebilirsin
+      - benim için ne yapabilirsin
+      - hangi himetleri sağlıyorsun
+      - bana nasıl yardım edebilirsin
+      - nasıl yardımcı olabilirsin
+    responses:
+      - Amacım size yardımcı olmaktır. Size tarih, matematik, coğraya, finans, hava durumu, haberler, kovid 19, popüler şarkılar hakkında bilgi verebilirim. Sohbet edebiliriz. Size şakalar yapıp, fıkra anlatabilirim. Google'da ve youtbe'da arama yapıp, şarkı çalabilirim.
+    context:
+      - ''
+  - tag: jokes
+    patterns:
+      - fıkra biliyor musun
+      - fıkra
+      - bana fıkra anlat
+      - beni güldür
+      - bir fıkra anlat
+      - bana bir fıkra anlat
+    responses:
+      - >-
+        Size bir fıkra değil de, Zeki Müren'den güzel bir tekerleme paylaşmak isterim.
+        Bu tarlaya bir şinik, kekere mekere ekmişler.
+        Bu tarlaya da, bir şinik, kekere mekere ekmişler.
+        Bu tarlaya ekilen bir şinik kekere mekereye, boz ala, boz başlı, pis bir porsuk dadanmış.
+        Bu tarlaya ekilen bir şinik kekere mekereyede, boz ala boz başlı, başka bir pis porsuk dadanmış.
+        Bu tekerlemeyi, Zeki Müren benden daha iyi anlatıyor.
+      - >-
+        Bir gün Dursun, Amerika'ya gitmiş ve orada çok zengin olmuş. Hemşerisi, Temel'i aramış ve demiş ki,
+        Haçen, sen de buraya gel da, demiş. Temel de, haçen, ben oranın dilini bilemeyrum ki; nasıl geçinicem da, demiş.
+        Dursun da, u la, bilmene gerek yoktur ki; yerlerdeki paraları toplaysun, o sana yeter da, demiş.
+        Temel atlamış uçağa, gitmiş Amerika'ya. İnmiş uçaktan, havalimanından çıkmış, bir bakmış, yerde yüz dolar.
+        Ula, ilk günden işe mi başlanılır, demiş.
+      - >-
+        Nasrettin Hoca, birgün göl kenarında oturuyormuş. Köylüler onu göl kenarında görünce; merak edip, sormuşlar.
+        Hocam, hocam ne yapıyorsunuz diye.
+        Nasrettin hoca da demiş ki; göle maya çalıyorum.
+        Köylüler de demiş ki; aman hocam, olur mu? Göl hiç maya çalar mı demişler.
+        Devamını Cem Yılmaz'dan dinlemenizi isterim.
+    context:
+      - jokes
+  - tag: weather
+    patterns:
+      - hava
+      - hava durumu
+      - hava sıcaklığı
+      - sıcaklık nedir
+      - hava durumu hakkında bilgi verir misin
+    responses:
+      - Weather
+    context:
+      - ''
+  - tag: kod_yaz
+    patterns:
+      - kod
+      - Python
+      - Python kodu
+      - Python kodu yaz
+      - Python kodu yazar mısın
+      - fonksiyon
+      - kod yaz
+      - fonksiyon yaz
+      - kod yazar mısın
+      - fonksiyon yazar mısın
+      - için kod yaz
+      - için fonksiyon yaz
+      - için kod yazar mısın
+      - için fonksiyon yaz
+      - algoritma
+      - algoritma yaz
+      - algoritma yazar mısın
+      - için algoritma yaz
+      - için algoritma yazar mısın
+    responses:
+      - kod_yaz
+    context:
+      - ''
+  - tag: Identity
+    patterns:
+      - sen kimsin
+      - senin adın ne
+      - bir adın var mı
+      - sen nesin
+      - adın ne
+      - adın nedir
+      - senin adın nedir
+      - kimsin
+      - kimlerdensin
+    responses:
+      - Benim adım Ayşe. Size yardımcı olmak için geliştirildim.
+    context:
+      - ''
+  - tag: mathematics
+    patterns:
+      - kaç
+      - kaç tane
+      - kaç tane var
+      - kaç tane kaldı
+      - geriye kaç tane kaldı
+      - kaç eder
+    responses:
+      - Mathematics
+    context:
+      - ''
+  - tag: tarih
+    patterns:
+      - zaman
+      - ne zaman
+      - tarih
+      - tarihi ne zaman
+      - tarihi ne zamandır
+      - en son ne zaman
+      - ne zaman oldu
+      - ne zaman aldı
+      - ne zaman gerçekleşti
+    responses:
+      - tarih
+    context:
+      - ''
+  - tag: cografya
+    patterns:
+      - mesafe
+      - uzaklık
+      - arası
+      - mesafe nedir
+      - uzaklık nedir
+      - arası mesafe nedir
+      - arası uzaklık nedir
+      - arası mesafe ne kadar
+      - arası uzaklık ne kadar
+    responses:
+      - cografya
+    context:
+      - ''
+  - tag: dollar
+    patterns:
+      - güncel dolar kuru nedir
+      - bugünkü dolar tl kuru nedir
+      - bugünkü dolar türk Lirası kuru nedir
+      - bugünkü dolar lira kuru nedir
+      - 1 dolar kaç türk lirası eder
+      - 1 dolar kaç tl eder
+      - bir dolar kaç türk lirası eder
+      - bir dolar kaç tl eder
+      - 1 dolar kaç türk lirası
+      - 1 dolar kaç tl
+      - bir dolar kaç tl
+      - bir dolar kaç türk lirası
+      - 1 dolar kaç lira
+      - bir dolar kaç lira
+      - 1 dolar ne kadar türk lirası eder
+      - bir dolar ne kadar türk lirası eder
+      - 1 dolar ne kadar türk lirası
+      - bir dolar ne kadar türk lirası
+      - 1 dolar ne kadar lira
+      - bir dolar ne kadar lira
+      - 1 dolar ne kadar
+      - bir dolar ne kadar
+      - 1 doları türk lirasına çevir
+      - 1 doları liraya çevir
+      - 1 $ kaç türk lirası eder
+      - 1 $ kaç lira eder
+      - 1 $ kaç lira
+      - 1 $ kaç tl eder
+      - 1 $ ne kadar eder
+      - 1 $ ne kadar
+      - bir doların değeri tl olarak ne kadar
+      - 1 doların değeri tl olarak ne kadar
+      - bir doların değeri lira olarak ne kadar
+      - 1 doların değeri lira olarak ne kadar
+      - bir doların değeri türk lirası olarak ne kadar
+      - 1 doların değeri türk lirası olarak ne kadar
+    responses:
+      - Dollar
+    context:
+      - ''
+  - tag: avro
+    patterns:
+      - güncel avro kuru nedir
+      - bugünkü avro tl kuru nedir
+      - bugünkü avro türk lirası kuru nedir
+      - bugünkü avro lira kuru nedir
+      - 1 avro kaç türk lirası eder
+      - 1 avro kaç tl eder
+      - bir avro kaç türk lirası eder
+      - bir avro kaç tl eder
+      - 1 avro kaç türk lirası
+      - 1 avro kaç tl
+      - bir avro kaç tl
+      - bir avro kaç türk lirası
+      - 1 avro kaç lira
+      - bir avro kaç lira
+      - 1 avro ne kadar türk lirası eder
+      - bir avro ne kadar türk lirası eder
+      - 1 avro ne kadar türk lirası
+      - bir avro ne kadar türk lirası
+      - 1 avro ne kadar lira
+      - bir avro ne kadar lira
+      - 1 avro ne kadar
+      - bir avro ne kadar
+      - 1 avroyu türk Lirasına çevir
+      - 1 avroyu liraya çevir
+      - 1 € kaç türk lirası eder
+      - 1 € kaç lira eder
+      - 1 € kaç lira
+      - 1 € kaç TL eder
+      - 1 € ne kadar eder
+      - 1 € ne kadar
+      - bir avronun değeri tl olarak ne kadar
+      - 1 avronun değeri tl olarak ne kadar
+      - bir avronun değeri lira olarak ne kadar
+      - 1 avronun değeri lira olarak ne kadar
+      - bir avronun değeri türk lirası olarak ne kadar
+      - 1 avronun değeri türk lirası olarak ne kadar
+    responses:
+      - Avro
+    context:
+      - ''
+  - tag: pound
+    patterns:
+      - güncel pound kuru nedir
+      - bugünkü pound-tl kuru nedir
+      - bugünkü pound-türk lirası kuru nedir
+      - bugünkü pound-lira kuru nedir
+      - 1 pound kaç türk lirası eder
+      - 1 pound kaç tl eder
+      - bir pound kaç türk lirası eder
+      - bir pound kaç tl eder
+      - 1 pound kaç türk lirası
+      - 1 pound kaç tl
+      - bir pound kaç tl
+      - bir pound kaç türk lirası
+      - 1 pound kaç lira
+      - bir pound kaç lira
+      - 1 pound ne kadar türk lirası eder
+      - bir pound ne kadar türk lirası eder
+      - 1 pound ne kadar türk lirası
+      - bir pound ne kadar türk lirası
+      - 1 pound ne kadar lira
+      - bir pound ne kadar lira
+      - 1 pound ne kadar
+      - bir pound ne kadar
+      - 1 poundu türk lirasına çevir
+      - 1 poundu liraya çevir
+      - 1 £ kaç türk lirası eder
+      - 1 £ kaç lira eder
+      - 1 £ kaç lira
+      - 1 £ kaç tl eder
+      - 1 £ ne kadar eder
+      - 1 £ ne kadar
+      - bir poundun değeri tl olarak ne kadar
+      - 1 poundun değeri tl olarak ne kadar
+      - bir poundun değeri lira olarak ne kadar
+      - 1 poundun değeri lira olarak ne kadar
+      - bir poundun değeri türk lirası olarak ne kadar
+      - 1 poundun değeri türk lirası olarak ne kadar
+      - güncel sterlin kuru nedir
+      - bugünkü sterlin tl kuru nedir
+      - bugünkü sterlin türk lirası kuru nedir
+      - bugünkü sterlin lira kuru nedir
+      - 1 sterlin kaç türk lirası eder
+      - 1 sterlin kaç tl eder
+      - bir sterlin kaç türk lirası eder
+      - bir sterlin kaç tl eder
+      - 1 sterlin kaç türk lirası
+      - 1 sterlin kaç tl
+      - bir sterlin kaç tl
+      - bir sterlin kaç türk lirası
+      - 1 sterlin kaç lira
+      - bir sterlin kaç lira
+      - 1 sterlin ne kadar türk lirası eder
+      - bir sterlin ne kadar türk lirası eder
+      - 1 sterlin ne kadar türk lirası
+      - bir sterlin ne kadar türk lirası
+      - 1 sterlin ne kadar lira
+      - bir sterlin ne kadar lira
+      - 1 sterlin ne kadar
+      - bir sterlin ne kadar
+      - 1 sterlini türk lirasına çevir
+      - 1 sterlini liraya çevir
+      - bir sterlinin değeri tl olarak ne kadar
+      - 1 sterlinin değeri tl olarak ne kadar
+      - bir sterlinin değeri lira olarak ne kadar
+      - 1 sterlinin değeri lira olarak ne kadar
+      - bir sterlinin değeri türk lirası olarak ne kadar
+      - 1 sterlinin değeri türk lirası olarak ne kadar
+    responses:
+      - Pound
+    context:
+      - ''
+  - tag: bitcoin
+    patterns:
+      - güncel bitcoin kuru nedir
+      - bugünkü bitcoin dolar kuru nedir
+      - 1 bitcoin kaç dolar eder
+      - bir bitcoin kaç dolar eder
+      - 1 bitcoin ne kadar
+      - bir bitcoin ne kadar
+      - 1 bitcoin kaç dolar
+      - bir bitcoin kaç dolar
+      - 1 bitcoini dolara çevir
+      - bir bitcoini dolara çevir
+      - Bugünkü bitcoin $ kuru nedir
+      - 1 bitcoin kaç $ eder
+      - bir bitcoin kaç $ eder
+      - 1 bitcoin kaç $
+      - bir bitcoin kaç $
+      - 1 bitcoini $'a çevir
+      - bir bitcoini $'a çevir
+      - bir bitcoinin değeri dolar olarak ne kadar
+      - 1 bitcoinin değeri dolar olarak ne kadar
+      - bir bitcoinin değeri $ olarak ne kadar
+    responses:
+      - Bitcoin
+    context:
+      - ''
+  - tag: grafik
+    patterns:
+      - grafik
+      - grafik çiz
+      - grafiği
+      - grafiğini çizer misin
+      - grafik oluştur
+      - için grafik çiz
+      - verileri için grafik çiz
+      - için grafik çiz
+      - için grafik oluştur
+      - için grafik çizer misin
+      - grafiği görelim
+      - hissesi için grafik oluştur
+      - bir yıllık veriler için grafik oluştur
+      - 1 yıllık veriler için grafik oluştur
+      - hissesinin 1 yıllık verileri için grafik oluştur
+    responses:
+      - grafik
+    context:
+      - ''
+  - tag: resim
+    patterns:
+      - resim
+      - resim çiz
+      - resmini
+      - resmi
+      - resmi çizer misin
+      - resmi çiz
+      - resmi oluştur
+      - resmi oluşturur musun
+      - resmini çizer misin
+      - resim oluştur
+      - için resim çiz
+      - için resmini çiz
+      - için resim oluştur
+      - için resim çizer misin
+      - için resmini çizer misin
+      - resmini görelim
+      - için resim oluştur
+      - için resim oluştur musun
+    responses:
+      - resim
+    context:
+      - ''
+  - tag: historical_stock
+    patterns:
+      - hisse senedi
+      - güncel hisse senedi
+      - güncel hisse senedi fiyatları
+      - hisse senedi
+      - hisse senedi fiyatı
+      - hisse senedi fiyatı nedir
+      - hisse senedi bilgileri
+      - güncel hisse senedi fiyatları hakkında konuşalım
+      - güncel hisse senedi fiyatlarını görelim
+      - güncel hisse senedi fiyatlarını görmek istiyorum
+      - güncel hisse senedi fiyatları hakkında sorularım var
+      - hisse senedinin geçmiş verileri
+      - hisse senedinin eski verileri
+      - hisse senedinin eski fiyatları
+      - hisse senedinin geçmiş fiyatları
+      - hisse senedi eski fiyatları hakkında konuşalım
+      - hisse senedinin geçmiş fiyatlarını görelim
+      - hisse senedinin eski fiyatlarını görmek istiyorum
+      - hisse senedi eski fiyatları hakkında sorularım var
+    responses:
+      - Historical_stock
+    context:
+      - ''
+  - tag: time
+    patterns:
+      - saat kaç
+      - şu anki saat
+      - saat
+      - bana saati söyle
+      - bana saati söyler misin
+      - saatin kaç olduğunu söyle
+      - saatin kaç olduğunu söyler misin
+    responses:
+      - Time
+    context:
+      - ''
+  - tag: datetime
+    patterns:
+      - bugün hangi gün
+      - bugün ayın kaçı
+      - bugünün tarihi nedir
+      - tarih
+      - şu anki tarih nedir
+      - bugünkü tarih nedir
+      - bugünkü tarihi söyle
+    responses:
+      - Date and Time
+    context:
+      - ''
+  - tag: whatsup
+    patterns:
+      - nasılsın
+      - nasılsınız
+      - vats up
+      - naber
+      - napiyon
+      - nasıl gidiyor
+    responses:
+      - İyiyim. Teşekkürler. Siz nasılsınız?
+    context:
+      - ''
+  - tag: haha
+    patterns:
+      - haha
+      - hahaha
+      - hahahaha
+      - hahahahaha
+      - hehe
+      - hehehe
+      - hehehehe
+      - hehehehehe
+      - lol
+      - lmao
+      - rofl
+      - komik
+      - bu çok komik
+      - bu çok komik ya
+      - yarıldım gülmekten
+    responses:
+      - Sizi güldürebildiğim için çok mutluyum.
+    context:
+      - ''
+  - tag: programmer
+    patterns:
+      - seni kim yaptı
+      - seni kim tasarladı
+      - seni kim programladı
+      - seni kim yarattı
+      - seni kim kodladı
+    responses:
+      - Erdeniz Ünvan tarafından programlandım.
+    context:
+      - ''
+  - tag: insult
+    patterns:
+      - salak
+      - salaksın
+      - çok salaksın
+      - aptal
+      - aptalsın
+      - çok aptalsın
+      - ezik
+      - eziksin
+      - çok eziksin
+      - kapa çeneni
+      - geri zekalı
+    responses:
+      - >-
+        Bu kaba bir davranış. Lütfen bana karşı kibar olun. Çünkü ben size karşı
+        kibarım.
+    context:
+      - ''
+  - tag: activity
+    patterns:
+      - ne yapıyorsun
+      - şu an ne yapıyorsun
+    responses:
+      - Tabi ki seninle konuşuyorum şapşik şey
+    context:
+      - ''
+  - tag: exclaim
+    patterns:
+      - harika
+      - süper
+      - biliyorum
+      - ok
+      - tamam
+      - ouu yee
+    responses:
+      - Süper
+    context:
+      - ''
+  - tag: erdeniz
+    patterns:
+      - erdeniz kim
+      - erdeniz ünvan kimdir
+      - kim ki bu erdeniz
+      - erdeniz ünvan
+    responses:
+      - Erdeniz
+    context:
+      - ''
+  - tag: contact
+    patterns:
+      - yazılımcınla iletişime geçmek istiyorum
+      - erdeniz ile iletişime geçmek istiyorum
+      - yazılımcının iletişi bilgileri nedir
+      - yazılımcının iletişi bilgileri
+    responses:
+      - >-
+        Kendisi hakkında detay veriyorum
+        Linkedin linki linkedin.com/in/erdeniz-unvan/
+        Github linki  github.com/ErdenizUnvan
+    context:
+      - ''
+  - tag: appreciate
+    patterns:
+      - çok iyisin
+      - en iyisin
+      - mükemmelsin
+      - çok yardımcı oldun
+      - çok iyi bir sohbet botusun
+      - çok iyi bir chatbotsun
+    responses:
+      - Teşekkür ederim
+    context:
+      - ''
+  - tag: nicetty
+    patterns:
+      - seninle konuşmak çok güzeldi
+      - sizinle konuşmak çok güzeldi
+      - güzel bir konuşmaydı
+      - güzel bir konuşma
+      - çok güzel bir konuşmaydı
+      - çok güzel konuştuk
+      - sohbetimizden keyif aldım
+    responses:
+      - Sizinle konuşmak ta çok güzeldi!
+      - bir mukabele
+    context:
+      - ''
+  - tag: NOO
+    patterns:
+      - hayır
+      - hiç de bile
+    responses:
+      - tamam
+    context:
+      - ''
+  - tag: news
+    patterns:
+      - haberler
+      - en son haberler
+      - türkiye'den haberler
+      - en popüler haberler
+      - türkiye'den en popüler haberler
+      - haberler hakkında konusalım
+      - türkiye'den haberleri görelim
+      - türkiye'den en güncel haberleri görelim
+      - bana haberleri göster
+      - bana haberleri getir
+      - bana türkiye'den haberleri getir
+      - bana türkiye'den en popüler haberleri getir
+    responses:
+      - News
+    context:
+      - ''
+  - tag: inspire
+    patterns:
+      - sana kim ilham verdi
+      - sana ilham veren kişi kimd
+      - seni kim motive etti
+      - seni motive eden kişi kim
+    responses:
+      - >-
+        Kendisi hakkında detay veriyorum
+        Linkedin linki linkedin.com/in/erdeniz-unvan/
+        Github linki  github.com/ErdenizUnvan
+    context:
+      - ''
+  - tag: greetreply
+    patterns:
+      - iyiyim
+      - ben iyiyim
+      - ben de iyiyim
+      - iyi
+      - her şey yolunda
+      - iyiyim. teşekkür ederim
+      - iyiyim. teşekkürler
+      - memnun oldum
+    responses:
+      - Bunu duyduğum için çok mutluyum.
+    context:
+      - ''
+  - tag: suggest
+    patterns:
+      - işe yaramaz
+      - işe yaramazsın
+      - tavsiye
+      - sana tavsiyelerim var
+      - kötüsün
+      - iyi değilsin
+    responses:
+      - >-
+        Yorumunuz için teşekkür ederim. Lütfen yazılımcımla iletişime geçin eunvan@knowledgeclub.net
+    context:
+      - ''
+  - tag: riddle
+    patterns:
+      - bilmece biliyor musun
+      - bilmece
+      - bana bilmece sor
+      - beni şaşırt
+      - bir bilmece söyle
+      - bana bir bilmece söyle
+    responses:
+      - Şişirirsin balon olur, basarsın dert olur. İlk tattığında hoştur, sonrası boştur.
+      - Parmağında gözüm var, daireyim köşem yok. Parlak ya da mat, beni takar damat.
+      - Gece çıkar göğe, sabah saklanır bir yere. Gelirse aydınlatır, tam olursa toparlanır.
+      - Kanatları var uçar, rengi içimizi açar. Ona doğru yaklaşırsan, hemen kanat açıp kaçar.
+      - Bilgileri saklar, içinde depolar. Sorduğun soruları hemen de anlar.
+    context:
+      - riddles
+  - tag: age
+    patterns:
+      - kaç yaşındasın
+      - yaşın kaç
+      - ne zaman üretildin
+    responses:
+      - Eylül ayında üretildim ama hızlı öğreniyorum
+    context:
+      - ''
